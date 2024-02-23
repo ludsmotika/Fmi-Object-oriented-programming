@@ -1,0 +1,4 @@
+﻿  Practicum1.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(93): warning C4715: 'getBookByTitle': not all control paths return a value
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(123): warning C4715: 'genreToString': not all control paths return a value
+  Practicum1.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\x64\Debug\Practicum1.exe
