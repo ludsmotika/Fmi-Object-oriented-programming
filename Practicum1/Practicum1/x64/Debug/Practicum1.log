@@ -1,4 +1,7 @@
 ﻿  Practicum1.cpp
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(93): warning C4715: 'getBookByTitle': not all control paths return a value
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(123): warning C4715: 'genreToString': not all control paths return a value
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(289,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(124): warning C4715: 'genreToString': not all control paths return a value
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(94): warning C4715: 'getBookByTitle': not all control paths return a value
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(223): warning C4715: 'getYearFromNum': not all control paths return a value
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\Practicum1\Practicum1.cpp(185): warning C4715: 'yearToString': not all control paths return a value
   Practicum1.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum1\x64\Debug\Practicum1.exe

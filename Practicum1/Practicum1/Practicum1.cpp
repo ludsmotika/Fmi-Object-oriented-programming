@@ -154,7 +154,7 @@ struct Student
 {
 	unsigned facultatyNumber;
 	Year year;
-	double averageGrage;
+	double averageGrade;
 };
 
 void initStudent(Student& student, unsigned facultatyNumber, Year year, double averageGrade)
@@ -162,7 +162,7 @@ void initStudent(Student& student, unsigned facultatyNumber, Year year, double a
 
 	assert(facultatyNumber >= 10000 && facultatyNumber <= 99999);
 
-	student.averageGrage = averageGrade;
+	student.averageGrade = averageGrade;
 	student.year = year;
 	student.facultatyNumber = facultatyNumber;
 }
@@ -185,14 +185,200 @@ const char* yearToString(Year year)
 }
 
 
-void printStudent(const Student& student) 
+void printStudent(const Student& student)
 {
 	std::cout << student.facultatyNumber << std::endl;
-	std::cout << student.averageGrage<< std::endl;
-	std::cout << yearToString(student.year)<< std::endl;
+	std::cout << student.averageGrade << std::endl;
+	std::cout << yearToString(student.year) << std::endl;
 }
 
 
+//04
+
+constexpr unsigned MAX_COUNT_STUDENTS_IN_GROUP = 3;
+
+struct Group
+{
+	Student students[MAX_COUNT_STUDENTS_IN_GROUP];
+	unsigned studentsCount = 0;
+	double averageGrade;
+};
+
+
+Year getYearFromNum(unsigned year)
+{
+	switch (year)
+	{
+	case 1:
+		return Year::First;
+	case 2:
+		return Year::Second;
+	case 3:
+		return Year::Third;
+	case 4:
+		return Year::Fourth;
+	default:
+		break;
+	}
+}
+
+Group initGroup(int countOfStudents)
+{
+	Group group;
+
+	double gradeSum = 0;
+
+	while (group.studentsCount < MAX_COUNT_STUDENTS_IN_GROUP)
+	{
+		Student current;
+		int yearAsANum;
+		std::cin >> yearAsANum;
+		int fn;
+		std::cin >> fn;
+		double averageGrade;
+		std::cin >> averageGrade;
+
+		Year year = getYearFromNum(yearAsANum);
+
+		initStudent(current, fn, year, averageGrade);
+
+		group.students[group.studentsCount++] = current;
+
+		gradeSum += current.averageGrade;
+	}
+
+	group.averageGrade = gradeSum / group.studentsCount;
+
+	return group;
+}
+
+int countOfStudentsWithBetterGrade(const Group& group, double minGrade)
+{
+	int count = 0;
+
+	for (size_t i = 0; i < group.studentsCount; i++)
+	{
+		if (group.students[i].averageGrade >= minGrade)
+			count++;
+	}
+
+	return count;
+}
+
+//05
+bool isBoolArrayHaveOnlyTrueValues(bool* arr, int length)
+{
+	for (size_t i = 0; i < length; i++)
+	{
+		if (!arr[i])
+			return false;
+	}
+
+	return true;
+}
+
+Student getBestStudentFromGroup(const Group& group, bool* alreadyChosenStudents)
+{
+	assert(group.studentsCount != 0);
+	assert(!isBoolArrayHaveOnlyTrueValues(alreadyChosenStudents, group.studentsCount));
+
+	int currentBestStudentIndex = 0;
+	for (size_t i = 0; i < group.studentsCount; i++)
+	{
+		if (group.students[i].averageGrade > group.students[currentBestStudentIndex].averageGrade && !alreadyChosenStudents[i])
+			currentBestStudentIndex = i;
+	}
+
+	alreadyChosenStudents[currentBestStudentIndex] = true;
+	return group.students[currentBestStudentIndex];
+}
+
+Student* getBestNStudentsFromAGroupByGrade(const Group& group, int n)
+{
+	Student* scholarships = new Student[n];
+
+	bool* alreadyChosenStudents = new bool[group.studentsCount] {0};
+
+	for (size_t i = 0; i < n; i++)
+	{
+		scholarships[i] = getBestStudentFromGroup(group, alreadyChosenStudents);
+	}
+
+	delete[] alreadyChosenStudents;
+
+	return scholarships;
+}
+
+void printStudentsWithScholarship(const Group& group, double minGrade)
+{
+	int countOfScholarships = countOfStudentsWithBetterGrade(group, minGrade);
+
+	Student* students = getBestNStudentsFromAGroupByGrade(group, countOfScholarships);
+
+	for (size_t i = 0; i < countOfScholarships; i++)
+	{
+		std::cout << students[i].facultatyNumber << "  ";
+		std::cout << students[i].averageGrade << std::endl;
+	}
+
+	delete[] students;
+}
+
+//06
+
+constexpr unsigned MAX_QUESTIONS_COUNT_FOR_TEST = 4;
+constexpr unsigned MAX_SYMBOLS_COUNT_IN_QUESTION = 50;
+constexpr unsigned MAX_SYMBOLS_COUNT_IN_ANSWER = 50;
+constexpr unsigned COUNT_OF_POSSIBLE_ANSWERS_FOR_QUESTION = 4;
+
+struct Answer
+{
+	char text[MAX_SYMBOLS_COUNT_IN_ANSWER];
+	bool IsRight;
+};
+
+struct Question
+{
+	char questionText[MAX_SYMBOLS_COUNT_IN_QUESTION];
+	Answer answers[COUNT_OF_POSSIBLE_ANSWERS_FOR_QUESTION];
+	int points;
+};
+
+struct Test
+{
+	Question questions[MAX_QUESTIONS_COUNT_FOR_TEST];
+	int questionsCount;
+};
+
+void doTest(const Test& test)
+{
+	int totalPoints = 0;
+
+	for (size_t i = 0; i < test.questionsCount; i++)
+	{
+		std::cout << test.questions[i].questionText << std::endl;
+
+		for (size_t j = 0; j < COUNT_OF_POSSIBLE_ANSWERS_FOR_QUESTION; j++)
+			std::cout << j + 1 << ". " << test.questions[i].answers[j].text << std::endl;
+
+		int chosenAnswerIndex;
+		std::cin >> chosenAnswerIndex;
+
+		assert(chosenAnswerIndex >= 1 && chosenAnswerIndex <= COUNT_OF_POSSIBLE_ANSWERS_FOR_QUESTION);
+
+		if (test.questions[i].answers[chosenAnswerIndex - 1].IsRight)
+		{
+			std::cout << "This was the right answer!" << std::endl;
+			totalPoints += test.questions[i].points;
+		}
+		else
+		{
+			std::cout << "Wroooong!" << std::endl;
+		}
+	}
+
+	std::cout << "You have: " << totalPoints << "points";
+}
 int main()
 {
 	//01
@@ -201,4 +387,41 @@ int main()
 	printComplexNumber(AddComplexNumbers(a, b));
 	printComplexNumber(MultiplyComplexNumbers(a, b));*/
 
+
+	//03 04 05
+
+	/*Group group = initGroup(3);
+	printStudentsWithScholarship(group, 5.50);*/
+
+	//06
+	Answer answer1 = { "blue",0 };
+	Answer answer2 = { "red",0 };
+	Answer answer3 = { "yellow",1 };
+	Answer answer4 = { "green",0 };
+	Question firstQuestion = { "what is the color of the sun?",{answer1,answer2,answer3,answer4},3 };
+
+
+	Answer answer21 = { "blue",0 };
+	Answer answer22 = { "red",0 };
+	Answer answer23 = { "yellow",0 };
+	Answer answer24 = { "green",1 };
+	Question secondQuestion = { "what is the color of the apple?",{answer21,answer22,answer23,answer24} ,5 };
+
+
+	Answer answer31 = { "blue",0 };
+	Answer answer32 = { "red",1 };
+	Answer answer33 = { "yellow",0 };
+	Answer answer34 = { "green",0 };
+	Question thirdQuestion = { "what is the color of hell?",{answer31,answer32,answer33,answer34} ,10 };
+
+
+	Answer answer41 = { "blue",0 };
+	Answer answer42 = { "red",0 };
+	Answer answer43 = { "copper",1 };
+	Answer answer44 = { "green",0 };
+	Question fourthQuestion = { "what is the color tates buggati?",{answer41,answer42,answer43,answer44} ,15 };
+
+	Test test = { {firstQuestion,secondQuestion,thirdQuestion,fourthQuestion},4 };
+
+	doTest(test);
 }
