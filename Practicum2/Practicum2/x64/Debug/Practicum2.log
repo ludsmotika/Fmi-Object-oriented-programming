@@ -1,2 +1,6 @@
 ﻿  Practicum2.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum2\Practicum2\Practicum2.cpp(298,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum2\Practicum2\Practicum2.cpp(304,25): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum2\Practicum2\Practicum2.cpp(410,13): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum2\Practicum2\Practicum2.cpp(413): warning C4715: 'getIndexOfText': not all control paths return a value
   Practicum2.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\Practicum2\x64\Debug\Practicum2.exe

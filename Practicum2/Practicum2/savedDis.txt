@@ -1,0 +1,12 @@
+Bobov Dol
+11000
+Pernik
+30000
+Kyustendil
+40000
+Blagoevgrad
+300000
+Varna
+500000
+Sofia
+15000000
