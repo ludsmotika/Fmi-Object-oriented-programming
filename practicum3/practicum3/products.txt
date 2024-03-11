@@ -1,0 +1,3 @@
+Adidas,3,4.30,CLOTHING,Vanko OOD
+Rich dad poor dad,10,12.20,BOOKS,Danjo OOD
+Vafli troq,14,1.30,FOOD,hrana OOD

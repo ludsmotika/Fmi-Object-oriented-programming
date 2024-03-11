@@ -1,2 +1,6 @@
 ﻿  practicum3.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum3\practicum3\practicum3.cpp(224,25): warning C4244: 'initializing': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum3\practicum3\practicum3.cpp(226,22): warning C4244: 'initializing': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum3\practicum3\practicum3.cpp(349,11): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum3\practicum3\practicum3.cpp(220): warning C4715: 'readProductCategory': not all control paths return a value
   practicum3.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum3\x64\Debug\practicum3.exe
