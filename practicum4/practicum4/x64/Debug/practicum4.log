@@ -1,0 +1,3 @@
+﻿  practicum4.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum4\practicum4\practicum4.cpp(23,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  practicum4.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum4\x64\Debug\practicum4.exe
