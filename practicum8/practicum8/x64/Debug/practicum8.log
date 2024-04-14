@@ -1,0 +1,5 @@
+﻿  practicum8.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum8\practicum8\practicum8.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum8\practicum8\StringVector.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum8\practicum8\practicum8.cpp(19,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  practicum8.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum8\x64\Debug\practicum8.exe

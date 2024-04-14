@@ -1,0 +1,12 @@
+﻿  Matrix.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(31,9): error C2084: function 'Matrix::Matrix(void)' already has a body
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.h(22,2): message : see previous definition of '{ctor}'
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(98,13): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(98,25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(122,13): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(122,25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(151,9): error C2039: 'cout': is not a member of 'std'
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\predefined C++ types (compiler internal)(347,11): message : see declaration of 'std'
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum7\practicum7\Matrix.cpp(151,14): error C2065: 'cout': undeclared identifier
+  practicum7.cpp
+  Generating Code...
