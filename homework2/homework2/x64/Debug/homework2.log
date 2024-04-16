@@ -1,17 +1,20 @@
 ﻿  MultiSet.cpp
 C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(15,59): warning C4244: '=': conversion from 'double' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(82,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(114,21): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(124,26): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(128,27): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(169,21): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(174,22): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(186,61): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(214,66): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(215,68): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(218,33): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(234,66): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(235,68): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(238,35): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(13,59): warning C4244: '=': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(81,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(113,21): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(123,26): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(127,27): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(170,21): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(175,22): warning C4244: 'initializing': conversion from 'double' to 'uint8_t', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(187,61): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(215,66): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(216,68): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(219,33): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(235,66): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(236,68): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.cpp(239,35): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  homework2.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\homework2\MultiSet.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
   homework2.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\homework2\x64\Debug\homework2.exe

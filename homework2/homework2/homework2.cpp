@@ -3,7 +3,6 @@
 
 int main()
 {
-
 	MultiSet m(10, 3);
 
 	m.addNumber(1);
@@ -31,31 +30,36 @@ int main()
 	m.print();
 	m.printBits();
 
-	MultiSet m2(5, 4);
+	m.serialize("saved.txt");
 
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(1);
-	m2.addNumber(2);
-	m2.addNumber(2);
-	m2.addNumber(3);
-	m2.addNumber(3);
-	m2.addNumber(4);
-	m2.addNumber(5);
-	m2.addNumber(5);
-	m2.addNumber(10);
-	m2.addNumber(10);
-	m2.addNumber(10);
-	m2.addNumber(9);
+	MultiSet des = MultiSet::deserialize("saved.txt");
+	des.print();
+	des.printBits();
+	//MultiSet m2(5, 4);
 
-	m2.print();
-	m2.printBits();
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(1);
+	//m2.addNumber(2);
+	//m2.addNumber(2);
+	//m2.addNumber(3);
+	//m2.addNumber(3);
+	//m2.addNumber(4);
+	//m2.addNumber(5);
+	//m2.addNumber(5);
+	//m2.addNumber(10);
+	//m2.addNumber(10);
+	//m2.addNumber(10);
+	//m2.addNumber(9);
+
+	//m2.print();
+	//m2.printBits();
 
 	/*MultiSet intersection = m ^ m2;
 	intersection.print();
@@ -65,8 +69,7 @@ int main()
 	diff.print();
 	diff.printBits();*/
 
-	MultiSet complement = !m2;
+	/*MultiSet complement = !m2;
 	complement.print();
-	complement.printBits();
-
+	complement.printBits();*/
 }

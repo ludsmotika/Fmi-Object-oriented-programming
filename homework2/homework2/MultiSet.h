@@ -21,6 +21,9 @@ public:
 	void print() const;//
 	void printBits() const;//
 
+	void serialize(const char* filename) const;
+	static MultiSet deserialize(const char* filename);
+
 	friend MultiSet operator^(const MultiSet& first, const MultiSet& second);
 	friend MultiSet operator/(const MultiSet& first, const MultiSet& second);
 	friend MultiSet operator!(const MultiSet& set);

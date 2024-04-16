@@ -1,5 +1,6 @@
 #include "MultiSet.h"
 #include "GlobalFunctions.h"
+#include <fstream>
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
@@ -94,8 +95,7 @@ void MultiSet::addNumberByCount(unsigned num, unsigned count)
 
 	if ((countOfOccurrences == this->maxCountOfOccurrences) || (num > this->upperLimit) || !count)
 	{
-		//TODO: throw error or just return
-		return;
+		throw std::out_of_range("Invalid number!");
 	}
 
 	unsigned bucketIndex = (num * maxBitsPerNum) / 8;
@@ -146,7 +146,9 @@ uint8_t MultiSet::countOfOccurrencesByNumber(unsigned num) const
 {
 	if (num > this->upperLimit)
 	{
+		//TODO
 		return 0;
+		//throw std::out_of_range("Invalid number!");
 	}
 
 	unsigned bucketIndex = (num * maxBitsPerNum) / 8;
@@ -250,7 +252,45 @@ MultiSet operator!(const MultiSet& set)
 	return complementSet;
 }
 
+void MultiSet::serialize(const char* filename) const 
+{
+	if (!filename)
+		throw std::runtime_error("Invalid argument!");
 
-// TODO - think about the default constructor
-// TODO - think if the serialize is a print with cout stream with predefined operator << >> 
+	std::ofstream file(filename, std::ios::out | std::ios::binary);
+
+	if (!file.is_open())
+		throw std::runtime_error("Cannot open file for writing!");
+	
+	file.write((const char*) &this->upperLimit,sizeof(unsigned int));
+	file.write((const char*) &this->maxBitsPerNum, sizeof(unsigned int));
+
+	file.write((const char*)this->data, this->bucketsCount);
+}
+
+MultiSet MultiSet::deserialize(const char* filename)
+{
+	if (!filename)
+		throw std::runtime_error("Invalid argument!");
+
+	std::ifstream file(filename, std::ios::in | std::ios::binary);
+
+	if (!file.is_open())
+		throw std::runtime_error("Cannot open file for reading!");
+
+	unsigned int upperLimit=0;
+	unsigned int maxBitsPerNum=0;
+
+	file.read((char*) &upperLimit, sizeof(unsigned int));
+	file.read((char*) &maxBitsPerNum, sizeof(unsigned int));
+
+	MultiSet result(upperLimit, maxBitsPerNum);
+
+	file.read((char*)result.data, result.bucketsCount * sizeof(uint8_t));
+
+	return result;
+}
+
 // TODO - do i have to write my own std::pow function
+// do i need a big 6 
+// does the operators have to be friend functions
