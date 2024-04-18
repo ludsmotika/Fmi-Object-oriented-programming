@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -130,9 +130,11 @@
     <ClCompile Include="GlobalFunctions.cpp" />
     <ClCompile Include="homework2.cpp" />
     <ClCompile Include="MultiSet.cpp" />
+    <ClCompile Include="x64\ModifiableIntegersFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GlobalFunctions.h" />
+    <ClInclude Include="ModifiableIntegersFunction.h" />
     <ClInclude Include="MultiSet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

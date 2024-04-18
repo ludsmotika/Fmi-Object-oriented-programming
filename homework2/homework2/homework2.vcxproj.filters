@@ -24,12 +24,18 @@
     <ClCompile Include="GlobalFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="x64\ModifiableIntegersFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MultiSet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GlobalFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifiableIntegersFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
