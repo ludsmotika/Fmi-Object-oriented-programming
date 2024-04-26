@@ -127,12 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FoodPanda.cpp" />
     <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="Order.cpp" />
     <ClCompile Include="practicum9.cpp" />
+    <ClCompile Include="Restaurant.cpp" />
     <ClCompile Include="StringVector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FoodPanda.h" />
     <ClInclude Include="MyString.h" />
+    <ClInclude Include="Order.h" />
+    <ClInclude Include="Restaurant.h" />
     <ClInclude Include="StringVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
