@@ -3,8 +3,9 @@
 
 class StudentDB 
 {
-private:
+protected:
 	Student* students;
+private:
 	unsigned studentsCount;
 	unsigned capacity;
 

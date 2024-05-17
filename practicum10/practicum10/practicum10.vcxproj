@@ -127,17 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FilteredStudentDB.cpp" />
     <ClCompile Include="GroupTicket.cpp" />
     <ClCompile Include="MyString.cpp" />
     <ClCompile Include="practicum10.cpp" />
+    <ClCompile Include="SortedStudentDB.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentDB.cpp" />
     <ClCompile Include="StudentTicket.cpp" />
     <ClCompile Include="Ticket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FilteredStudentDB.h" />
     <ClInclude Include="GroupTicket.h" />
     <ClInclude Include="MyString.h" />
+    <ClInclude Include="SortedStudentDB.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="StudentDB.h" />
     <ClInclude Include="StudentTicket.h" />

@@ -36,6 +36,12 @@
     <ClCompile Include="StudentDB.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SortedStudentDB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FilteredStudentDB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StudentDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedStudentDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FilteredStudentDB.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
