@@ -1,0 +1,10 @@
+﻿  practicum12.cpp
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum12\practicum12\Vector.hpp(125,13): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum12\practicum12\Vector.hpp(124,1): message : while compiling class template member function 'void Vector<double>::push_back(T &&)'
+          with
+          [
+              T=double
+          ]
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum12\practicum12\practicum12.cpp(7,13): message : see the first reference to 'Vector<double>::push_back' in 'main'
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum12\practicum12\practicum12.cpp(6,17): message : see reference to class template instantiation 'Vector<double>' being compiled
+  practicum12.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\practicum12\x64\Debug\practicum12.exe

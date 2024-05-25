@@ -11,6 +11,6 @@ C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\exercise-lection-12\
           [
               T=int
           ]
-C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\exercise-lection-12\exercise-lection-12\exercise-lection-12.cpp(8,11): message : see the first reference to 'Queue<int>::push' in 'main'
+C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\exercise-lection-12\exercise-lection-12\exercise-lection-12.cpp(9,11): message : see the first reference to 'Queue<int>::push' in 'main'
 C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\exercise-lection-12\exercise-lection-12\exercise-lection-12.cpp(7,16): message : see reference to class template instantiation 'Queue<int>' being compiled
   exercise-lection-12.vcxproj -> C:\Users\danie\source\repos\Fmi-Object-Oriented-Programming\exercise-lection-12\x64\Debug\exercise-lection-12.exe
